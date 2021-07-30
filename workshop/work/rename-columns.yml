@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20210614-1
+      author: hansvillaizan
+      changes:
+        - renameColumn:
+            columnDataType: int
+            newColumnName: id
+            oldColumnName: invid
+            tableName: invoice
+  - changeSet:
+      id: 20210614-2
+      author: hansvillaizan
+      changes:
+        - renameColumn:
+            columnDataType: varchar(75)
+            newColumnName: invoice_number
+            oldColumnName: invnumber
+            tableName: invoice
+  - changeSet:
+      id: 20210614-3
+      author: hansvillaizan
+      changes:
+        - renameColumn:
+            columnDataType: datetime
+            newColumnName: date_created
+            oldColumnName: datetimecreated
+            tableName: invoice

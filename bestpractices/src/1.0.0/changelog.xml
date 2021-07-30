@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+
+  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <include file="src/1.0.0/01-create-table-category.sql" />
+    <include file="src/1.0.0/02-create-table-product.sql" />
+    <include file="src/1.0.0/03-refactor-alter-table-product.sql" />
+    <include file="src/1.0.0/04-create-table-supplier.sql" />
+    <include file="src/1.0.0/05-create-table-message.sql" />
+    <include file="src/1.0.0/06-insert-table-message.sql" />
+    <include file="src/1.0.0/07-create-table-payment.sql" />
+    <include file="src/1.0.0/08-create-sp-select_category.sql" />
+</databaseChangeLog>
